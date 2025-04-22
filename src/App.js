@@ -6,6 +6,8 @@ import Signin from './components/Signin';
 import Signup from './components/Signup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './Navbar.css';
+import './Homepage.css';
 
 function App() {
   return (

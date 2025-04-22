@@ -209,4 +209,32 @@
     .mobile-menu-button {
       display: block;
     }
+    .navbar-menu {
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.navbar-menu.open {
+  max-height: 1000px;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    max-height: 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-right-group {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+      
   }

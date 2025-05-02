@@ -1,31 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import Carousel from './Carousel';
 import './Homepage.css';
 
-const carouselImages = [
-  {
-    src: '/assets/carousel/hoodie-banner.jpg',
-    alt: 'Prosper Hood Collection',
-    title: 'NEW ARRIVALS',
-    subtitle: 'Urban Hoods Collection',
-    cta: 'SHOP NOW'
-  },
-  {
-    src: '/assets/carousel/tshirt-banner.jpg',
-    alt: 'Prosper T-Shirts',
-    title: 'SUMMER SALE',
-    subtitle: '50% OFF SELECT T-SHIRTS',
-    cta: 'DISCOVER DEALS'
-  },
-  {
-    src: '/assets/carousel/cap-banner.jpg',
-    alt: 'Prosper Caps Collection',
-    title: 'STREET STYLE',
-    subtitle: 'Trendy Caps for Every Occasion',
-    cta: 'EXPLORE'
-  }
-];
 
 const products = {
   hoods: [
@@ -141,6 +119,7 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <Navbar />
+      <Carousel />
 
       {cartNotification && (
         <div className="cart-notification">
